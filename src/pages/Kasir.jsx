@@ -36,7 +36,7 @@ const Kasir = () => {
   return (
     <div className="bg-violet-50 pt-20 h-screen">
       <div className="max-w-[1300px] px-8 mx-auto py-[60px]">
-        <h4 className="text-center text-4xl font-medium">KASIR</h4>
+        <h4 className="text-center text-4xl font-medium">TELER</h4>
         <div className='w-[750px] mx-auto rounded-lg bg-white shadow mt-10 grid grid-cols-2 gap-2 p-5'>
           <div className="rounded-md col-span-2 border w-full text-center gap-x-3 p-5">
               <HiMiniUser className="text-violet-500 mx-auto" size={50}/>

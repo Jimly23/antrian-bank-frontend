@@ -24,8 +24,8 @@ const Login = () => {
       return;
     }
     
-    if(userData.email == "kasir@gmail.com" && userData.password == "kasir123") {
-      navigate("/kasir");
+    if(userData.email == "teler@gmail.com" && userData.password == "teler123") {
+      navigate("/teler");
       return;
     }
 
