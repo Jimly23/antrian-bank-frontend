@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const createQueue = async (data) => {
   try {
-    const response = await axios.post("http://127.0.0.1:8000/api/queue/create", data);
+    const response = await axios.post("https://api.antrian.programmergenz.site/api/queue/create", data);
     return response.data;
   } catch (error) {
     return error.response.data;
@@ -11,7 +11,7 @@ export const createQueue = async (data) => {
 
 export const getQueues = async () => {
   try {
-    const response = await axios.get("http://127.0.0.1:8000/api/queue");
+    const response = await axios.get("https://api.antrian.programmergenz.site/api/queue");
     return response.data;
   } catch (error) {
     return error.response.data;
@@ -21,7 +21,7 @@ export const getQueues = async () => {
 export const getQueueByUser = async (telepon) => {
   try {
     // Gunakan 'params' untuk memasukkan data sebagai query parameter
-    const response = await axios.get(`http://127.0.0.1:8000/api/queue/user/${telepon}`);
+    const response = await axios.get(`https://api.antrian.programmergenz.site/api/queue/user/${telepon}`);
     return response.data;
   } catch (error) {
     return error.response.data;
@@ -30,7 +30,7 @@ export const getQueueByUser = async (telepon) => {
 
 export const updateQueueStatus = async (id) => {
   try {
-    const response = await axios.put(`http://127.0.0.1:8000/api/queue/update/${id}`);
+    const response = await axios.put(`https://api.antrian.programmergenz.site/api/queue/update/${id}`);
     return response.data;
   } catch (error) {
     return error.response.data;
